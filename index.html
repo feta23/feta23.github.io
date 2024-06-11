@@ -4,69 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
   <style>
-    /* Reset CSS */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    /* Global Styles */
     body {
       font-family: 'Press Start 2P', cursive;
+      margin: 0;
+      padding: 0;
       background-color: #000;
       color: #fff;
       overflow-x: hidden; /* Prevent horizontal scrollbar */
     }
 
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    /* Header Styles */
     header {
-      background-color: #222;
-      padding: 20px;
+      background-color: #000;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
     }
 
     header h1 {
       font-size: 24px;
+      margin: 0;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
-    nav ul {
+    header nav ul {
       list-style-type: none;
+      margin: 0;
       padding: 0;
     }
 
-    nav ul li {
+    header nav ul li {
       display: inline;
       margin-right: 20px;
     }
 
-    nav ul li a {
+    header nav ul li a {
       color: #fff;
       text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
     }
 
-    main {
-      padding: 20px;
+    header nav ul li a:hover {
+      color: #00ff80;
     }
 
+    /* Section Styles */
     .section {
-      margin-bottom: 60px;
+      padding: 100px 0;
+      text-align: center;
     }
 
     .section h2 {
       font-size: 24px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
     }
 
+    /* Project Styles */
     .project {
       margin-bottom: 50px;
     }
 
     .project h3 {
       font-size: 18px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .project p {
@@ -77,10 +89,10 @@
       display: inline-block;
       background-color: #00ff80;
       color: #000;
-      padding: 8px 16px;
+      padding: 12px 30px;
       text-decoration: none;
-      border-radius: 3px;
-      transition: background-color 0.3s;
+      border-radius: 5px;
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
@@ -88,10 +100,19 @@
       color: #00ff80;
     }
 
+    /* Footer Styles */
     footer {
-      background-color: #222;
-      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
       text-align: center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .social-icons {
+      margin-top: 20px;
     }
 
     .social-icons a {
@@ -99,51 +120,67 @@
       text-decoration: none;
       font-size: 20px;
       margin-right: 10px;
+      transition: all 0.3s ease;
     }
 
     .social-icons a:hover {
       color: #fff;
     }
-  </style>
 
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
   <header>
-    <h1>Your Name - Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="projects" class="section">
+  <section id="projects" class="section">
+    <div class="container">
       <h2>Projects</h2>
+      <!-- Add your projects here -->
       <div class="project">
         <h3>Project Title</h3>
         <p>Description of the project goes here...</p>
         <a href="#" class="btn">View Project</a>
       </div>
-    </section>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
 
-    <section id="about" class="section">
+  <section id="about" class="section">
+    <div class="container">
       <h2>About Me</h2>
       <p>Write a brief introduction about yourself here...</p>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
+  <section id="contact" class="section">
+    <div class="container">
       <h2>Contact Me</h2>
       <p>You can reach me at: your-email@example.com</p>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <div class="social-icons">
-      <a href="#" class="social"><i class="fab fa-github"></i></a>
-      <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-      <!-- Add more social icons as needed -->
+    <div class="container">
+      <div class="social-icons">
+        <a href="#" class="social"><i class="fab fa-github"></i></a>
+        <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+        <!-- Add more social icons as needed -->
+      </div>
     </div>
   </footer>
+
 </body>
 </html>
