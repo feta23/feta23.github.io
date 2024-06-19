@@ -12,8 +12,9 @@
         overflow-x: hidden; /* Prevent horizontal scrollbar */
         background-color: #000;
         background-image: url('https://t3.ftcdn.net/jpg/04/70/73/64/360_F_470736409_BjMO4XuHintvApcIyuJM7DR65rTfWdXQ.jpg');
-        background-repeat: no-repeat; /* Corrected */
-        background-size: cover; /* Ensures the image covers the entire background */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; /* Center the background image */
     }
 
     .container {
@@ -64,6 +65,8 @@
     .section {
       padding: 100px 0;
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+      color: #48e809; /* Text color */
     }
 
     .section h2 {
@@ -75,10 +78,10 @@
     /* Project Styles */
     .project {
       margin-bottom: 50px;
-      background-color: #000; /* Black background for project descriptions */
+      background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
       padding: 20px;
       border-radius: 10px;
-      color: #48e809; /* Text color for better readability on black background */
+      color: #48e809; /* Text color */
     }
 
     .project h3 {
