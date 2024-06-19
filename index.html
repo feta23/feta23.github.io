@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--testing-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,9 +12,8 @@
         overflow-x: hidden; /* Prevent horizontal scrollbar */
         background-color: #000;
         background-image: url('https://img.freepik.com/premium-vector/galaxy-space-landscape-with-planets-stars-ai-generated-8bit-pixel-game-scene-background-with-retrofuturistic-ambiance-capturing-essence-cosmic-adventure-interstellar-exploration_8071-54932.jpg');
-        /* background-repeat: repeat; */
-        background-repeat: never;
-        background-size: auto;
+        background-repeat: no-repeat; /* Corrected */
+        background-size: cover; /* Ensures the image covers the entire background */
     }
 
     .container {
@@ -77,6 +75,10 @@
     /* Project Styles */
     .project {
       margin-bottom: 50px;
+      background-color: #000; /* Black background for project descriptions */
+      padding: 20px;
+      border-radius: 10px;
+      color: #48e809; /* Text color for better readability on black background */
     }
 
     .project h3 {
@@ -110,7 +112,7 @@
       padding: 20px 0;
       text-align: center;
       width: 100%;
-      position: absolute;
+      position: relative;
       bottom: 0;
     }
 
@@ -152,34 +154,24 @@
       <h2>Projects</h2>
       <!-- Add your projects here -->
       <div class="project">
-        <div class="container">
         <h3>Salisbury Zoo Database Management Software</h3>
-        <p>Was privledged to work with a phenomenal group to create a DBMS for the Salisbury Zoo. The software utilizes a database to keep track of each animals
-        personal information along with thier welfare status and their diets. Includes graphs to visual the data and to make assumptions on
-        the welbeing of an animal and their diets.</p>
+        <p>Was privileged to work with a phenomenal group to create a DBMS for the Salisbury Zoo. The software utilizes a database to keep track of each animal's personal information along with their welfare status and their diets. Includes graphs to visualize the data and to make assumptions on the wellbeing of an animal and their diets.</p>
         <a href="https://github.com/Salisbury-University/animal-welfare" class="btn">View Project</a>
-        </div>
       </div>
 
       <div class="project">
         <h3>When in doubt, write in C!</h3>
-        <p>
-          A repository of C programs I've written over the years.
-        </p>
+        <p>A repository of C programs I've written over the years.</p>
       </div>
 
       <div class="project">
         <h3>Miscellaneous</h3>
-        <p>
-          From Java to C++ to Python. Who knows what you'll find in this repo...
-        </p>
+        <p>From Java to C++ to Python. Who knows what you'll find in this repo...</p>
       </div>
       
       <div class="project">
-        <h3>Comming Soon...</h3>
-        <p>
-          You can't rush perfection!
-        </p>
+        <h3>Coming Soon...</h3>
+        <p>You can't rush perfection!</p>
       </div>
       <!-- Add more projects as needed -->
     </div>
@@ -189,7 +181,7 @@
     <div class="container">
       <h2>About Me</h2>
       <p>Just a simple man trying to make his way through the galaxy... <br> 
-      Love to fish, freedive, scuba dive, play soccer, and spend time with my family. </p>
+      Love to fish, freedive, scuba dive, play soccer, and spend time with my family.</p>
     </div>
   </section>
 
